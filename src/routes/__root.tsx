@@ -90,10 +90,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         property: "og:description",
         content:
-          "Automate workplace tasks with AI — write emails, research topics, generate documents, and chat with an AI assistant.",
+          "Automate workplace tasks with AI — write emails, research topics, generate documents, and chat with an AI assistant. No signup required.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "AI Workplace Productivity Assistant" },
+      { name: "twitter:description", content: "Automate workplace tasks with AI — write emails, research topics, generate documents, and chat with an AI assistant. No signup required." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/4076362f-95eb-453f-98dd-07fd31980431/id-preview-231a04b7--dbde521f-5892-4696-a364-1d310dae06f4.lovable.app-1783636917098.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/4076362f-95eb-453f-98dd-07fd31980431/id-preview-231a04b7--dbde521f-5892-4696-a364-1d310dae06f4.lovable.app-1783636917098.png" },
     ],
     links: [
       {
