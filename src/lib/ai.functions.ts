@@ -11,14 +11,13 @@ function getGateway() {
   return createLovableAiGatewayProvider(key);
 }
 
-async function runPrompt(system: string, prompt: string, temperature = 0.7) {
+async function runPrompt(system: string, prompt: string) {
   const gateway = getGateway();
   try {
     const { text } = await generateText({
       model: gateway(MODEL),
       system,
       prompt,
-      temperature,
     });
     return { text };
   } catch (e) {
