@@ -143,3 +143,78 @@
     color: var(--color-foreground);
   }
 }
+
+/*
+ * AI output readability.
+ * Force high-contrast typography for AI-generated markdown regardless of
+ * whether the `.dark` class is present on <html>. The app palette is always
+ * dark, so prose must always render inverted with near-white body text and
+ * clearly distinguished headings, links, code, and list markers.
+ */
+@utility prose-ai {
+  color: #F8FAFC;
+  max-width: none;
+
+  & p,
+  & li,
+  & blockquote,
+  & td,
+  & th {
+    color: #F8FAFC;
+  }
+
+  & h1,
+  & h2,
+  & h3,
+  & h4,
+  & h5,
+  & h6 {
+    color: #FFFFFF;
+    font-weight: 600;
+  }
+
+  & strong {
+    color: #FFFFFF;
+  }
+
+  & a {
+    color: #60A5FA;
+    text-decoration: underline;
+  }
+
+  & a:hover {
+    color: #93C5FD;
+  }
+
+  & code {
+    color: #F8FAFC;
+    background-color: rgba(148, 163, 184, 0.15);
+    padding: 0.125rem 0.35rem;
+    border-radius: 0.25rem;
+  }
+
+  & pre {
+    background-color: #0B1220;
+    color: #F8FAFC;
+    border: 1px solid #334155;
+  }
+
+  & pre code {
+    background-color: transparent;
+    padding: 0;
+  }
+
+  & blockquote {
+    color: #CBD5E1;
+    border-left-color: #3B82F6;
+  }
+
+  & hr {
+    border-color: #334155;
+  }
+
+  & ul > li::marker,
+  & ol > li::marker {
+    color: #94A3B8;
+  }
+}
