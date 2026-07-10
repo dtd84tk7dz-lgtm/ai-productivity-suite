@@ -157,7 +157,7 @@ function ChatPage() {
                       </div>
                       {m.content ? (
                         <>
-                          <article className="prose prose-sm dark:prose-invert max-w-none">
+                          <article className="prose prose-sm prose-ai max-w-none">
                             <ReactMarkdown>{m.content}</ReactMarkdown>
                           </article>
                           <div className="mt-2 flex gap-1">

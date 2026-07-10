@@ -96,7 +96,7 @@ export function OutputPanel({
             className="min-h-[420px] font-mono text-sm"
           />
         ) : value ? (
-          <article className="prose prose-sm dark:prose-invert max-w-none whitespace-pre-wrap [&_h1]:mt-0">
+          <article className="prose prose-sm prose-ai max-w-none whitespace-pre-wrap [&_h1]:mt-0">
             <ReactMarkdown>{value}</ReactMarkdown>
           </article>
         ) : (

@@ -97,7 +97,7 @@ function HistoryPage() {
             <DialogTitle>{viewing?.title}</DialogTitle>
           </DialogHeader>
           {viewing && (
-            <article className="prose prose-sm dark:prose-invert max-w-none">
+            <article className="prose prose-sm prose-ai max-w-none">
               <ReactMarkdown>{viewing.content}</ReactMarkdown>
             </article>
           )}
